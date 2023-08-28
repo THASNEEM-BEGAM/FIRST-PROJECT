@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% include 'link.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <link href="{% static 'css/regis.css' %}" type="text/css" media="all"
+    <meta charset="UTF-8">
+    <title>REGISTER</title>
+</head>
+<h3>Create Account</h3>
+<body>
+<form style="color:blue; background-color:pink; text-align:bold;" action="" method="POST">
+    {% csrf_token %}
+    {{ forms.username.label }}
+    <br>
+    <br>
+    {{ forms.username }}
+    <br>
+    <br>
+    {{ forms.email.label }}
+    <br>
+    <br>
+    {{ forms.email }}
+    <br>
+    <br>
+    {{ forms.password1.label }}
+    <br>
+    <br>
+    {{ forms.password1 }}
+    <br>
+    <br>
+    {{ forms.password2.label }}
+    <br>
+    <br>
+    {{ forms.password2 }}
+    <br>
+    <br>
+    <input style=color:green; type="SUBMIT" name="SUBMIT">
+</form>
+{{ forms.errors }}
+</body>
+</html>

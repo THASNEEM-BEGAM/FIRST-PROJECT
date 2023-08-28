@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% include 'link.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DASHBOARD</title>
+</head>
+<body>
+<br>
+<br>
+<h1> WELCOME TO FITA </h1>
+<br>
+<br>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.first_name.label }}
+    {{ form.first_name }}
+    <br>
+    <br>
+    {{ form.last_name.label }}
+    {{ form.last_name }}
+    <br>
+    <br>
+    {{ form.course.label }}
+    {{ form.course }}
+    <br>
+    <br>
+    <input type="submit" name="submit">
+</form>
+<br>
+<hr>
+<hr>
+{% for i in data %}
+  <i>{{ i.first_name }} : {{ i.last_name }} enrolled for {{ i.course }} </i>
+<br>
+<br>
+{% endfor %}
+<hr>
+<hr>
+</body>
+</html>

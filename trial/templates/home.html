@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% include 'link.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <style type="text/css">
+    h1{ color:blue;
+    background-color:pink;border:2px solid black;align:middle;}
+h2{color:deeppink;text-decoration:underline;}
+p{ color:darkviolet;border:2px solid orange;background-color:antiquewhite;line-height:1.5em;text-align:justify;text-indent:50px;}
+p:first-letter{color:darkviolet;font-size:2em;
+</style>
+
+    <meta charset="UTF-8">
+    <title>HOMEPAGE</title>
+</head>
+<body>
+<h1>WELCOME TO FITA!</h1>
+<h2>FITA Academy</h2>
+<p>FITA (Focus’d IT Academy) is a leading Training and Placement company managed by IT veterans with more than a decade of experience in leading MNC companies. We are spread across cities like Chennai, Bangalore, Madurai, and Coimbatore. We are known for our practical approach towards training that enables students to gain real-time exposure on competitive technologies. Training is offered by employees from MNCs to give real corporate exposure to the students.</p>
+<br>
+<ol style=color:rgb(69,139,0);type="I">
+    <h3 style=color:red;align:middle;><u>Why FITA Academy Is The Best Training Institute In Chennai?</u></h3>
+    <li>Helped more than 50,000+ students and professionals to start & shift their Career into IT</li>
+<br>
+    <li>We enroll only 5-6 students per batch so that individual attention to each and every student is guaranteed</li>
+<br>
+    <li>We have placement tie-up with more than 1500+ companies. Our Placement team works tirelessly to help you get your dream IT job!</li>
+<br>
+    <li>Trainers from leading IT companies to provide an in-depth and practical training with real-time projects</li>
+<br>
+    </ol>
+    <a href="/register"><img src="{% static 'image/register.png' %}" width="70" height="70" ></a>
+    <a href="/login"><img src="{% static 'image/login.png' %}" width="70" height="70" ></a>
+
+</body>
+</html>
